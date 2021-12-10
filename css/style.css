@@ -18,9 +18,10 @@ nav ul   {
    
     font-size:1.5em;
 }
-li{
+nav ul li{
     border-radius:5px;
-    border-style:solid;
+    border-style: 5px solid;
+    
 }
 a{
     text-decoration:none;
@@ -31,6 +32,7 @@ p{
     font-size:medium;
 }
 footer ul{
+    
     display:flex;
     gap:0.5%;
     list-style-type:none;
@@ -114,9 +116,89 @@ animation: slide 10s infinite;
 }
 #profiles{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:medium;
+    font-size:4em;
     text-align:center;
 }
-fieldset{
-}
+
+
+.contacts{
+        display:flex;
+        gap:20%;
+        margin: 10% 20%;
+        align-items:center;
+       
+    }
+.address{
     
+    list-style-type: none;
+    
+
+}
+#addresses{
+    border:1px solid;
+    height:100%;
+}
+.slider{
+    width:532px;
+    height:570px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:hidden;
+    position:relative;
+    left:2.5%;
+    }
+.images{
+        width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+    }
+.m{
+    margin:10px
+}
+#services1{
+    display:flex;
+    gap:3%;
+  
+}
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  /* List items */
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Grey list item */
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  /* The "Sign Up" button */
+  .button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+#main{
+    margin-top:10%;
+    width:90%;
+    left:10px;
+}
