@@ -1,0 +1,112 @@
+body{
+    background-color:hsl(0, 2%, 79%);
+}
+div#container{
+    display:grid;
+    grid-template-rows:100%;
+    grid-template-columns:20% 1fr 20%;
+}
+.box1{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background-color:lightgray;
+}
+nav ul   {
+    display:grid;
+    
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ;
+    grid-column-gap:5%;
+    list-style-type:none;
+    text-align: center;
+    justify-content:center;
+    margin:0;
+    padding:0;
+
+    font-size:125%;
+   
+}
+li{
+width: 100%;
+}
+a{
+    text-decoration:none;
+    color: beige;
+    
+    border-radius:10%;
+}
+a:hover, a:active {
+    background-color: rgb(38, 56, 42);
+  }
+.contacts{
+    display:grid;
+    grid-auto-flow: column;
+    justify-content:center;
+    grid-gap:10%;
+}
+
+footer ul{
+    
+    display:grid;
+    grid-auto-flow:column;
+    grid-template-rows: 200%;
+    list-style-type:none;
+    justify-content:center;
+    margin:0;
+    padding:0;
+    border:0;
+    height:10%;
+}
+#copyright{
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+#legend{
+    background-color: rgb(224, 226, 225);
+    border-radius: 15px;
+    font-size: 100%;
+}
+.leave{
+        width:120%;
+        border:2px solid #999;
+        border-radius:8px;
+        box-shadow:0 0 10px rgb(73, 73, 73);
+        font-size:100%;
+        width:fit-content;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    width:100%;
+    border-radius: 6px;
+    border-width:thin ;
+}
+textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+.address{
+    width:120%;
+    list-style-type:none;
+    justify-content: center;
+   
+}
+#center{
+    text-align: center;
+}
+.lists{
+    margin:10%;
+}
+.submit{
+     background:#bf80f1;
+     color:white;
+     border-style:outset;
+     border-color:#c5c8ca;
+     height:50%;
+     width:40%;
+     font:bold 15px arial,sans-serif;
+     text-shadow:aqua;
+     align-items: center;
+}
