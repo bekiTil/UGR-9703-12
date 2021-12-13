@@ -1,5 +1,7 @@
 body{
-    background-color:hsl(0, 2%, 79%);
+    background-color:#efefef;
+    margin-bottom: 0;
+    
 }
 div#container{
     display:grid;
@@ -9,14 +11,21 @@ div#container{
 .box1{
     width:100%;
     height:100%;
-    border-radius:50%;
-    background-color:lightgray;
+    
+    
+}
+.box2{
+    position:relative;
+    top:35%;
+    width:100%;
+    justify-items:end;
 }
 nav ul   {
     display:grid;
+    grid-auto-flow: column;
+    grid-gap:2%;
     
-    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ;
-    grid-column-gap:5%;
+    
     list-style-type:none;
     text-align: center;
     justify-content:center;
@@ -25,19 +34,20 @@ nav ul   {
 
     font-size:125%;
    
-}
-li{
-width: 100%;
+    
 }
 a{
     text-decoration:none;
-    color: beige;
+    color:black;
     
     border-radius:10%;
 }
 a:hover, a:active {
-    background-color: rgb(38, 56, 42);
+    color: rgb(221, 151, 151);
+  transform: rotateY(360deg)
   }
+
+
 p{
     text-align:center;
     margin:0;
@@ -56,6 +66,45 @@ footer ul{
     border:0;
     height:10%;
 }
+header{
+    background-color:#efefef;
+    margin-bottom: 1%;
+    
+   
+}
+#copyright{
+    margin:0;
+    padding:0;
+}
+.profile{
+    
+}
+#profiles{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size:100%;
+     text-align: center;
+}
+body{
+    margin:0;
+}
+footer{
+    margin-top: 1%;
+    bottom:0;
+    width:100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    
+    }
+    footer ul{
+        
+        display:grid;
+        grid-auto-flow:column;
+        list-style-type:none;
+        justify-content:center;
+        margin:0;
+        padding:0;
+        border:0;
+       
+    }
 
 .slider{
         width:38%;

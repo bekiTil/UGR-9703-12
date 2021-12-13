@@ -76,39 +76,57 @@ header{
     margin:0;
     padding:0;
 }
-.profile{
-    
-}
-#profiles{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     font-size:100%;
-     text-align: center;
-}
-body{
-    margin:0;
-}
-footer{
-    margin-top: 1%;
-    bottom:0;
-    width:100%;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    
-    }
-    footer ul{
-        
-        display:grid;
-        grid-auto-flow:column;
-        list-style-type:none;
-        justify-content:center;
-        margin:0;
-        padding:0;
-        border:0;
-       
-    }
-.about{
+#services1{
     display:flex;
-    flex-wrap: wrap;
-    gap:10%;
-    justify-content: center;
-    margin:5%;
+    gap:3%;
+  
+}
+.price {
+    list-style-type: none;
+    border: 1px solid rgb(44, 36, 36);
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 10px;
+    
+  }
+  .price .header {
+    background-color: rgb(54, 228, 97);
+    color: rgb(20, 18, 18);
+    font-size: 200%;
+    border-radius: 10px;
+  }
+  
+  /* List items */
+  .price li {
+    border-bottom: 1px  rgb(19, 18, 18);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Grey list item */
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  
+  /* The "Sign Up" button */
+  .button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  #main{
+    display: grid;
+    grid-auto-flow: row;
+    margin-top:10%;
+    width:90%;
+    left:10px;
+
 }
