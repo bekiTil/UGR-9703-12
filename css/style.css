@@ -5,13 +5,15 @@ body{
 }
 div#container{
     display:grid;
-    grid-template-rows:100%;
-    grid-template-columns:20% 1fr 20%;
+    grid-template-rows:auto;
+    grid-template-columns:20% 60% 20%;
+    margin-bottom: 2%;
 }
 .box1{
-    width:100%;
-    height:100%;
-    border-radius:50%;
+   
+    align-self: center;
+   
+   
     
 }
 nav ul   {
@@ -33,6 +35,7 @@ nav ul   {
 }
 li{
 width: 100%;
+font-family: Snell Roundhand, cursive;
 
 
 }
@@ -43,8 +46,11 @@ a{
     border-radius:10%;
 }
 a:hover, a:active {
-    color: rgb(221, 151, 151);
-  transform: rotateY(360deg)
+    font-size:xx-large;
+  transform: rotateY(360deg);
+  text-decoration: line-through 2px dashed rgb(32, 32, 32);
+  z-index: -1;
+  
   }
  
  @media screen and (max-width: 768px){
@@ -73,10 +79,11 @@ li{
 }
     }
 .box2{
-    position:relative;
-    top:35%;
+    
+    position: relative;
+    top:25%;
     width:100%;
-    justify-items:end;
+    
 }
 p{
     text-align:center;
@@ -86,10 +93,13 @@ p{
    
 }
 footer{
-    position: fixed;
+    position:fixed;
+    
     bottom:0;
+    
     width:100%;
-    margin-top: 1%;
+    height:50px;
+    
 border-top-left-radius:10px;
 
 box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -110,16 +120,8 @@ footer ul{
     margin:0;
     padding:0;
 }
-.box{
-    margin:auto;
-    width:50%;
-    padding:1.3%;
-    
 
-  
-}
 
-}
 header{
     background-color:#efefef;
     margin-bottom: 1%;
@@ -150,7 +152,12 @@ header{
 }
 
 
+.box{
+    margin: 50px;
+    padding:5%;
 
+    
+}
 
 #navs{
     
@@ -158,14 +165,15 @@ header{
     border-radius:13%;
 }
 #section{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     font-size:150%;
-     align-items: center;
+      font-family:Snell Roundhand, cursive; 
+      font-size:3vw;
+      align-items: left;
         overflow: hidden;
+        text-align: center;
+       
         margin:auto;
         
-        text-align: center;
-        white-space: nowrap;
+        white-space:nowrap;
        width:0%;
         
        
@@ -174,18 +182,23 @@ header{
 }
 
   #second{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:150%;
-        text-align: center;
+    font-family: Snell Roundhand, cursive;
+    font-size:3vw;
+        
        overflow: hidden;
        margin:auto;
+      text-align: center;
+      align-items: center;
        
        
-       justify-items: center;
+       
+       
+      width:0%;
        white-space: nowrap;
-     width:0%;
+     
+     
        
-       animation: typing 2s steps(100,end) forwards;
+       animation: typing 2s steps(100,end) forwards ;
        animation-delay: 2s;
        
        
@@ -193,11 +206,36 @@ header{
   @keyframes typing {
     from { width:0%; }
     to { width:100%;
-  }
+  }}
+
   
   
-  
-   body {
+  @media screen and (max-width: 634px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    nav ul   {
+        display:grid;
+        grid-auto-flow: row;
+        grid-gap:1%;
+        
+        
+        list-style-type:none;
+        align-items: center;
     
-   margin:0;
+        align-items: center;
+        justify-content:center;
+        margin:0;
+        padding:0;
+    
+        font-size:5vw;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+       
+    }
+    
+    
 }
+body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+ }

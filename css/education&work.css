@@ -9,9 +9,8 @@ div#container{
     grid-template-columns:20% 1fr 20%;
 }
 .box1{
-    width:100%;
-    height:100%;
-    border-radius:50%;
+   
+    align-self: center;   
     
 }
 nav ul   {
@@ -31,22 +30,30 @@ nav ul   {
 }
 li{
 width: 100%;
+font-family: Snell Roundhand, cursive;
 }
-a{
+nav a{
     text-decoration:none;
     color:black;
     
     border-radius:10%;
 }
-a:hover, a:active {
-    color: rgb(221, 151, 151);
-  transform: rotateY(360deg)
+nav a:hover, a:active {
+    font-size:xx-large;
+  
+  text-decoration: line-through 2px dashed rgb(32, 32, 32);
+  
+  
   }
-.box2{
-    position:relative;
-    top:35%;
+  .box2{
+    
+    position: relative;
+    top:25%;
     width:100%;
-    justify-items:end;
+    
+}
+main{
+    margin-top:5%;
 }
 p{
     text-align:center;
@@ -80,29 +87,34 @@ footer ul{
 #education{
     display:grid;
     grid-gap:5%;
-    grid-template-columns:30%;
-    grid-template-rows:100% ;
+    grid-template-columns:20%;
+    grid-template-rows:100%;
+    align-items: center;
     text-align: center;
     grid-auto-flow: column;
 }
 #expression{
     display:grid;
     grid-gap:5%;
-    grid-template-columns:30%;
+    grid-template-columns:20%;
     grid-template-rows:100% ;
     grid-auto-flow: column;
     text-align: center;
+}
+.myschools{
+    width:30%;
 }
 h2{
 
     text-align:center;
 }
 .slide-container{
-    width:19%;
+    width:20%;
     height:100%;
     margin-left:auto;
     margin-right:auto;
     overflow:hidden;
+    align-content:left;
     
     }
 
@@ -146,21 +158,65 @@ animation: slide 10s infinite;
 }
 .tutoring{
     text-align:center;
+    width:100%;
     
 }
 .work1{
-    width:80%;
+    width:70%;
+    display:grid;
+    grid-auto-flow: column;
+    align-items: center;
+    margin-bottom: 10%;
+    grid-template-columns: 60% 30%;
+}
+.work2{
+    width:70%;
+    display:grid;
+    grid-auto-flow: column;
+    margin-bottom: 10%;
+    align-items: center;
+    grid-template-columns: 60% 30%;
 }
 #copyright{
     margin:0;
     padding:0;
 }
 .works{
+    position: relative;
     border: 2px solid #666;
-    padding:1%;
-    background-color: rgb(33, 199, 83);
+    width:100%;
+    background-color: rgb(100, 100, 100);
     color:white;
+    top:50%;
 }
-.works:hover{
-    background-color: lime;
+.works:hover , .works:active{
+    text-decoration: none;
+    color: beige;
+    font-size-adjust: none;
 }
+section{
+    margin-top:5% ;
+}
+.tutoring{
+    align-items: center;
+}
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    nav ul   {
+        display:grid;
+        grid-auto-flow: row;
+        grid-gap:1%;
+        
+        
+        list-style-type:none;
+        align-items: center;
+    
+        align-items: center;
+        justify-content:center;
+        margin:0;
+        padding:0;
+    
+        font-size:125%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+       
+    } 
