@@ -53,6 +53,26 @@ a:hover, a:active {
   
   }
  
+ @media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    nav ul   {
+        display:grid;
+        grid-auto-flow: row;
+        grid-gap:1%;
+        
+        
+        list-style-type:none;
+        align-items: center;
+    
+        align-items: center;
+        justify-content:center;
+        margin:0;
+        padding:0;
+    
+        font-size:125%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+       
+    } 
 li{
     margin:0.2%;
    
@@ -133,7 +153,8 @@ header{
 
 
 .box{
-    margin: 50px;
+    margin-top: 39px;
+    margin-bottom: 39px;
     padding:5%;
 
     
@@ -190,7 +211,7 @@ header{
 
   
   
-  @media screen and (max-width: 630px){
+  @media screen and (max-width: 634px){
     /* (A) BREAK INTO VERTICAL MENU */
     nav ul   {
         display:grid;
