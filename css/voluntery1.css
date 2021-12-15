@@ -9,16 +9,17 @@ div#container{
     grid-template-columns:20% 1fr 20%;
 }
 .box1{
-    width:100%;
-    height:100%;
+   
+    align-self: center;
+   
+   
     
+}.box2{
     
-}
-.box2{
-    position:relative;
-    top:35%;
+    position: relative;
+    top:25%;
     width:100%;
-    justify-items:end;
+    
 }
 nav ul   {
     display:grid;
@@ -39,13 +40,37 @@ nav ul   {
 a{
     text-decoration:none;
     color:black;
-    
+    font-family: Snell Roundhand, cursive;
     border-radius:10%;
 }
 a:hover, a:active {
-    color: rgb(221, 151, 151);
-  transform: rotateY(360deg)
+    font-size:xx-large;
+  transform: rotateY(30deg);
+  text-decoration: line-through 2px double rgb(32, 32, 32);
+  z-index: -1;
+  
   }
+  @media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    nav ul   {
+        display:grid;
+        grid-auto-flow: row;
+        grid-gap:1%;
+        
+        
+        list-style-type:none;
+        align-items: center;
+    
+        align-items: center;
+        justify-content:center;
+        margin:0;
+        padding:0;
+    
+        font-size:125%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+       
+    } }
+
 
 
 p{
@@ -68,7 +93,7 @@ footer ul{
 }
 header{
     background-color:#efefef;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
     
    
 }

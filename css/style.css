@@ -47,8 +47,8 @@ a{
 }
 a:hover, a:active {
     font-size:xx-large;
-  transform: rotateY(360deg);
-  text-decoration: line-through 2px dashed rgb(32, 32, 32);
+  transform: rotateY(30deg);
+  text-decoration: line-through 2px double rgb(32, 32, 32);
   z-index: -1;
   
   }
@@ -167,7 +167,7 @@ header{
 }
 #section{
       font-family:Snell Roundhand, cursive; 
-      font-size:3vw;
+      font-size:5vw;
       align-items: left;
         overflow: hidden;
         text-align: center;
@@ -184,7 +184,7 @@ header{
 
   #second{
     font-family: Snell Roundhand, cursive;
-    font-size:3vw;
+    font-size:5vw;
         
        overflow: hidden;
        margin:auto;
@@ -211,29 +211,9 @@ header{
 
   
   
-  @media screen and (max-width: 634px){
-    /* (A) BREAK INTO VERTICAL MENU */
-    nav ul   {
-        display:grid;
-        grid-auto-flow: row;
-        grid-gap:1%;
-        
-        
-        list-style-type:none;
-        align-items: center;
+  
     
-        align-items: center;
-        justify-content:center;
-        margin:0;
-        padding:0;
-    
-        font-size:5vw;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-       
-    }
-    
-    
-}
+
 body {
     height:100%;
     width:100%;

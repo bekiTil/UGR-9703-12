@@ -9,16 +9,18 @@ div#container{
     grid-template-columns:20% 1fr 20%;
 }
 .box1{
-    width:100%;
-    height:100%;
-    
+   
+    align-self: center;
+   
+   
     
 }
 .box2{
-    position:relative;
-    top:35%;
+    
+    position: relative;
+    top:25%;
     width:100%;
-    justify-items:end;
+    
 }
 nav ul   {
     display:grid;
@@ -41,12 +43,35 @@ a{
     color:black;
     
     border-radius:10%;
+    font-family: Snell Roundhand, cursive;
 }
 a:hover, a:active {
-    color: rgb(221, 151, 151);
-  transform: rotateY(360deg)
+    font-size:xx-large;
+  transform: rotateY(30deg);
+  text-decoration: line-through 2px double rgb(32, 32, 32);
+  z-index: -1;
+  
   }
-
+  @media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    nav ul   {
+        display:grid;
+        grid-auto-flow: row;
+        grid-gap:1%;
+        
+        
+        list-style-type:none;
+        align-items: center;
+    
+        align-items: center;
+        justify-content:center;
+        margin:0;
+        padding:0;
+    
+        font-size:125%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+       
+    } }
 
 p{
     text-align:center;
@@ -68,7 +93,7 @@ footer ul{
 }
 header{
     background-color:#efefef;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
     
    
 }
@@ -88,8 +113,8 @@ body{
     margin:0;
 }
 footer{
-    margin-top: 1%;
-    bottom:0;
+    margin-top:4%;
+    bottom:0vh;
     width:100%;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     
@@ -109,6 +134,7 @@ footer{
     display:grid;
     grid-auto-flow: column;
     justify-content:center;
+    grid-template-columns: 40% 15%;
     grid-gap:10%;
 }
 #copyright{
@@ -122,7 +148,7 @@ footer{
     font-size: 100%;
 }
 .leave{
-        width:120%;
+        width:80%;
         border:2px solid #999;
         border-radius:8px;
         box-shadow:0 0 10px rgb(73, 73, 73);
@@ -141,10 +167,13 @@ textarea{
     border-radius: 4px;
     background-color: #f8f8f8;
 }
+
+
 .address{
-    width:120%;
+    width:fit-content;
     list-style-type:none;
-    justify-content: center;
+    text-align: left;
+    
    
 }
 #center{
@@ -159,7 +188,7 @@ textarea{
      border-style:outset;
      border-color:#7cc0ee;
      height:50%;
-     width:25%;
+     width:fit-content;
      font:bold 15px arial,sans-serif;
      text-shadow:rgb(132, 211, 211);
      align-items: center;

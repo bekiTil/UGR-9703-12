@@ -1,7 +1,10 @@
+html{
+    min-height:100%;
+}
 body{
     background-color:#efefef;
     margin-bottom: 0;
-    
+    min-height: 100%;
 }
 div#container{
     display:grid;
@@ -9,16 +12,22 @@ div#container{
     grid-template-columns:20% 1fr 20%;
 }
 .box1{
-    width:100%;
-    height:100%;
-    
+   
+    align-self: center;
+   
+   
     
 }
+li{
+    font-family: Snell Roundhand, cursive;
+
+}
 .box2{
-    position:relative;
-    top:35%;
+    
+    position: relative;
+    top:25%;
     width:100%;
-    justify-items:end;
+    
 }
 nav ul   {
     display:grid;
@@ -43,10 +52,32 @@ a{
     border-radius:10%;
 }
 a:hover, a:active {
-    color: rgb(221, 151, 151);
-  transform: rotateY(360deg)
+    font-size:xx-large;
+  transform: rotateY(30deg);
+  text-decoration: line-through 2px double rgb(32, 32, 32);
+  z-index: -1;
+  
   }
-
+  @media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    nav ul   {
+        display:grid;
+        grid-auto-flow: row;
+        grid-gap:1%;
+        
+        
+        list-style-type:none;
+        align-items: center;
+    
+        align-items: center;
+        justify-content:center;
+        margin:0;
+        padding:0;
+    
+        font-size:125%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+       
+    } }
 
 p{
     text-align:center;
@@ -55,17 +86,7 @@ p{
     font-size:medium;
    
 }
-footer ul{
-    
-    display:grid;
-    grid-auto-flow:column;
-    list-style-type:none;
-    justify-content:center;
-    margin:0;
-    padding:0;
-    border:0;
-    height:10%;
-}
+
 header{
     background-color:#efefef;
     margin-bottom: 1%;
@@ -73,8 +94,8 @@ header{
    
 }
 #copyright{
-    margin:0;
-    padding:0;
+    margin:0%;
+    padding:0%;
 }
 .profile{
     
@@ -84,13 +105,14 @@ header{
      font-size:100%;
      text-align: center;
 }
-body{
-    margin:0;
-}
+
 footer{
+    
+  
     margin-top: 1%;
-    bottom:0;
+    bottom:0vh;
     width:100%;
+    height:100%;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     
     }
@@ -100,9 +122,9 @@ footer{
         grid-auto-flow:column;
         list-style-type:none;
         justify-content:center;
-        margin:0;
-        padding:0;
-        border:0;
+        margin:0%;
+        padding:0%;
+        border:0%;
        
     }
 .about{
@@ -111,4 +133,7 @@ footer{
     gap:10%;
     justify-content: center;
     margin:5%;
+}
+main{
+    margin-bottom: 2%;
 }
