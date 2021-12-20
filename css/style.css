@@ -3,7 +3,7 @@ html{
     background-size: cover;
 }
 body{
-    
+    background-color:blue;
     margin-bottom: 0;
     min-height: 100vh;
     
@@ -47,12 +47,14 @@ font-family: Snell Roundhand, cursive;
 a{
     text-decoration:none;
     color:black;
+    transition-property: font-size;
+    transition-duration: 10s;
     
     border-radius:10%;
 }
 a:hover, a:active {
-    font-size:xx-large;
-  transform: rotateY(30deg);
+    font-size:larger;
+
   text-decoration: line-through 2px double rgb(32, 32, 32);
   z-index: -1;
   
