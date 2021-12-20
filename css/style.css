@@ -47,15 +47,17 @@ font-family: Snell Roundhand, cursive;
 a{
     text-decoration:none;
     color:black;
-    transition-property: font-size;
-    transition-duration: 10s;
+    -webkit-transition: font-size 2s ease-out;
+    -moz-transition: font-size 2s ease-out;
+    -o-transition: font-size 2s ease-out;
+    transition: font-size 2s ease-out;
     
     border-radius:10%;
 }
 a:hover, a:active {
-    font-size:larger;
+    font-size:xx-large;
 
-  text-decoration: line-through 2px double rgb(32, 32, 32);
+  text-decoration: line-through 2px rgb(32, 32, 32);
   z-index: -1;
   
   }

@@ -47,6 +47,10 @@ a{
     text-decoration:none;
     color:black;
     font-family: Snell Roundhand, cursive;
+    -webkit-transition: font-size 2s ease-out;
+    -moz-transition: font-size 2s ease-out;
+    -o-transition: font-size 2s ease-out;
+    transition: font-size 2s ease-out;
     
     border-radius:10%;
 }

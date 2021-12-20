@@ -46,6 +46,11 @@ a{
     color:black;
     font-family: Snell Roundhand, cursive;
     border-radius:10%;
+    -webkit-transition: font-size 2s ease-out;
+    -moz-transition: font-size 2s ease-out;
+    -o-transition: font-size 2s ease-out;
+    transition: font-size 2s ease-out;
+    
 }
 a:hover, a:active {
     font-size:xx-large;
