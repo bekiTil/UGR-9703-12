@@ -56,10 +56,7 @@ a{
 }
 a:hover, a:active {
     font-size:xx-large;
-  transform: rotateY(30deg);
-  text-decoration: line-through 2px double rgb(32, 32, 32);
-  z-index: -1;
-  
+  transform: rotateY(30deg);  
   }
   @media screen and (max-width: 768px){
     /* (A) BREAK INTO VERTICAL MENU */
@@ -111,10 +108,10 @@ header{
     padding:0;
 }
 #services1{
-    margin:5%;
+    padding:5%;
     display:flex;
     gap:5%;
-    width:100%;
+    width:90%;
     flex-wrap: wrap;  
 }
 .b1{
@@ -122,54 +119,68 @@ header{
 }.columns{
     width:25%;
     
+   
 }
 .price {
-    list-style-type: none;
     
+    text-align: center;
     margin: 0;
     padding: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    border-radius: 10px;
+   
+    border-radius: 13px; 
+    border-spacing: 0;
     width:100%;
-    
+    height:60%;
+    border:solid 1px black;
+  
+  }
+  tr td{
+      border-radius: 13px;
   }
   .price .header {
-    background-color: rgb(54, 228, 97);
+    border-radius: 13px; 
+    
+    background-color: rgb(128, 197, 107);
     color: rgb(20, 18, 18);
     font-size:150%;
-    border-radius: 10px;
+    
     text-align: center;
+    padding:2%;
+    
   }
   
   /* List items */
-  .price li {
-    border: 1px solid rgb(19, 18, 18);
-    
-    text-align: center;
-    border-radius: 10px;
-    width:100%;
-    height:100%;
-  }
   
-  /* Grey list item */
+  
+ 
   
   
   /* The "Sign Up" button */
   .button {
-    background-color: #04AA6D;
+    background-color: #9dc2b4;
     border: none;
-    color: white;
+    color: rgb(51, 148, 228);
     
     text-align: center;
-    text-decoration: none;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
     
+    
+  }
+  .button:hover{
+    font-size: auto;
+    background-color: darkslategray;
+    transform: rotateY(30deg);
+    text-decoration: none;
+    z-index: -1;
   }
 #main{
     display: grid;
     grid-auto-flow: row;
     margin-top:10%;
-    width:90%;
+   
     
 }
 #tutorings{
