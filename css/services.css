@@ -88,8 +88,17 @@
              display:flex;
              gap:6%;
              width:100%;
-             flex-wrap: wrap;  
+             flex-wrap: wrap;
+         
          }
+         @media (max-width:300px) {
+            .services {
+              flex-direction: column;
+              width:150%;
+            }
+          }
+          
+          
         .image_description{
             width:35%;
         }
