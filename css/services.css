@@ -75,7 +75,8 @@
         .page_main{
             display: grid;
             grid-auto-flow: row;
-            margin-top:2%;
+            margin-top:4%;
+            margin-bottom:4%;
            
             
         }

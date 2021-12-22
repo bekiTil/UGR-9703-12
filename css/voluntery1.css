@@ -74,6 +74,7 @@
         }
     .page_main{
         margin-top:5%;
+        min-height:71vh;
     }
 .slider{
     width:37.9%;
