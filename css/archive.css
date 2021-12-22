@@ -85,9 +85,14 @@
     padding:5%;
 }
 .section{
+    align-items:baseline;
+    margin-top:12%;
     list-style-type:none;
 }
 .archives_tutor{
+    text-decoration: none;
+}
+.links{
     text-decoration: none;
 }
 .page_footer{

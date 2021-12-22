@@ -78,7 +78,7 @@
             min-height: 60vh;
             }
         .paragraph1{
-            font-family:Snell Roundhand, cursive; 
+            font-family:"Palatino LT STD", "Book Antiqua", Georgia, serif;
             font-size:5vw;
             align-items: left;
               overflow: hidden;
@@ -95,7 +95,7 @@
       }
       
         .paragraph2{
-          font-family: Snell Roundhand, cursive;
+          font-family: "Palatino LT STD", "Book Antiqua", Georgia, serif;
           font-size:5vw;
               
              overflow: hidden;
