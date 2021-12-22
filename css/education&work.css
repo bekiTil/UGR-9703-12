@@ -164,16 +164,20 @@
         }
 
         .works{
+            text-decoration:none ;
             position: relative;
             border: 2px solid #666;
             width:100%;
+            border-radius: 2px;
             background-color: rgb(100, 100, 100);
             color:white;
             top:50%;
         }
         .works:hover , .works:active{
+            text-transform:uppercase;
             text-decoration: none;
             color: beige;
+            background-color:brown;
             font-size-adjust: none;
         }
         .link{
